@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navlink {
+        @apply text-base font-poppins font-normal text-white block hover:bg-indigo-500 py-2 px-4 md:px-3 rounded-lg;
+    }
+    .list {
+        @apply md:w-full md:px-2;
+    }
+    .card {
+        @apply font-poppins rounded-lg text-white font-semibold text-xl py-20 w-80 md:w-full bg-gradient-to-b from-color2 to-violet-500 text-center hover:ring-2 hover:ring-indigo-500 hover:ring-offset-4 relative drop-shadow-md;
+    }
+    .note {
+        @apply py-1 px-2 bg-green-500 text-xs absolute rounded-tr-lg rounded-bl-lg top-0 right-0;
+    }
+    .footer-links {
+        @apply text-white text-sm font-poppins;
+    }
+    .thumbnail-btn {
+        @apply bg-gradient-to-l from-color2 to-violet-700 text-base text-white font-semibold py-3 px-4 rounded-lg inline-flex items-center w-full font-poppins;
+    }
+}
